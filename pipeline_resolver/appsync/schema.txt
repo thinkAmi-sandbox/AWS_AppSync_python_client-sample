@@ -1,0 +1,10 @@
+type BlogWithAuthor {
+	id: String!
+	title: String
+	author_id: String
+	author_name: String
+}
+
+type Query {
+	getBlogWithAuthor(id: String!): BlogWithAuthor
+}
