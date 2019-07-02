@@ -1,0 +1,14 @@
+type Query {
+	ham(req: String!): ResponseData
+	spam(req: String!): ResponseData
+}
+
+type ResponseData {
+	field: String
+	event: String
+	context: String
+}
+
+schema {
+	query: Query
+}
